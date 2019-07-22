@@ -118,9 +118,18 @@ public class UserRealm extends AuthorizingRealm{
             log.info("对用户[" + username + "]进行登录验证..验证未通过{}", e.getMessage());
             throw new AuthenticationException(e.getMessage(), e);
         }
+        //返回认证信息由父类AuthorizingRealm进行认证
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(user, password, getName());
         return info;
     
+	}
+	/* 
+	 * 判断token是否支持   
+	 */
+	@Override
+	public boolean supports(AuthenticationToken token) {
+		// TODO Auto-generated method stub
+		return super.supports(token);
 	}
 	  /**
      * 清理缓存权限
