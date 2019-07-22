@@ -1,0 +1,119 @@
+/**============================================================
+ * 版权： 
+ * 包： com.after90s.common.exception.baseException
+ * 修改记录：
+ * 日期                作者           内容
+ * =============================================================
+ * 2019年7月20日       lijiawen        
+ * ============================================================*/
+
+package com.after90s.common.exception.baseException;
+
+import org.springframework.util.StringUtils;
+
+import com.after90s.common.utils.MessageUtils;
+
+/**
+ * <p>TODO 自定义异常基类</p>
+ *
+ * @author lijiawen
+ * @version 2019年7月20日
+ */
+
+public class BaseException extends RuntimeException{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7813462287201742665L;
+
+    /**
+     * 所属模块
+     */
+    private String module;
+
+    /**
+     * 错误码
+     */
+    private String code;
+
+    /**
+     * 错误码对应的参数
+     */
+    private Object[] args;
+
+    /**
+     * 错误消息
+     */
+    private String defaultMessage;
+
+    public BaseException(String module, String code, Object[] args, String defaultMessage)
+    {
+        this.module = module;
+        this.code = code;
+        this.args = args;
+        this.defaultMessage = defaultMessage;
+    }
+
+    public BaseException(String module, String code, Object[] args)
+    {
+        this(module, code, args, null);
+    }
+
+    public BaseException(String module, String defaultMessage)
+    {
+        this(module, null, null, defaultMessage);
+    }
+
+    public BaseException(String code, Object[] args)
+    {
+        this(null, code, args, null);
+    }
+
+    public BaseException(String defaultMessage)
+    {
+        this(null, null, null, defaultMessage);
+    }
+
+    @Override
+    public String getMessage()
+    {
+        String message = null;
+        if (!StringUtils.isEmpty(code))
+        {
+            message = MessageUtils.message(code, args);
+        }
+        if (message == null)
+        {
+            message = defaultMessage;
+        }
+        return message;
+    }
+
+    public String getModule()
+    {
+        return module;
+    }
+
+    public String getCode()
+    {
+        return code;
+    }
+
+    public Object[] getArgs()
+    {
+        return args;
+    }
+
+    public String getDefaultMessage()
+    {
+        return defaultMessage;
+    }
+
+    @Override
+    public String toString()
+    {
+        return this.getClass() + "{" + "module='" + module + '\'' + ", message='" + getMessage() + '\'' + '}';
+    }
+
+}

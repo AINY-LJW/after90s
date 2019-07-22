@@ -1,0 +1,3 @@
+Application Version: ${after90s.version}
+Spring Boot Version: ${spring-boot.version}
+
