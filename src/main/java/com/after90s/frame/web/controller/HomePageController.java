@@ -33,8 +33,6 @@ public class HomePageController extends BaseController{
     @Autowired
     private IMenuService menuService;
 
-//    @Autowired
-//    private RuoYiConfig ruoYiConfig;
 
     // 系统首页
     @GetMapping("/index")

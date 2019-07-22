@@ -13,7 +13,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @SpringBootApplication
 @EnableTransactionManagement
-//@MapperScan("com.ruoyi.project.*.*.mapper")
 @MapperScan("com.after90s.core.*.*.*")
 public class GeneralBackendApplication {
 
