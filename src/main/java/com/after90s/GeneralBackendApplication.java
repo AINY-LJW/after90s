@@ -15,7 +15,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @MapperScan("com.after90s.core.*.*.*")
 public class GeneralBackendApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(GeneralBackendApplication.class, args);
 	}

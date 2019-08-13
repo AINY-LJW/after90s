@@ -23,7 +23,7 @@ import com.after90s.frame.web.controller.BaseController;
 import com.after90s.frame.web.domin.MessageEntity;
 
 /**
- * <p>TODO 类描述</p>
+ * <p>TODO 登陆相关</p>
  *
  *
  * @author lijiawen
