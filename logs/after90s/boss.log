@@ -1,52 +1,50 @@
-17:24:43.046 [restartedMain] INFO  com.after90s.GeneralBackendApplication - Starting GeneralBackendApplication on jiuqi-lijiawen with PID 24980 (D:\workspace-sts\GeneralBackend\target\classes started by lijiawen in D:\workspace-sts\GeneralBackend)
-17:24:43.149 [restartedMain] DEBUG com.after90s.GeneralBackendApplication - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
-17:24:43.149 [restartedMain] INFO  com.after90s.GeneralBackendApplication - No active profile set, falling back to default profiles: default
-17:24:46.637 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'com.after90s.frame.shiro.realm.UserRealm.authorizationCache' does not yet exist.  Creating now.
-17:24:46.639 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [com.after90s.frame.shiro.realm.UserRealm.authorizationCache]
-17:24:47.433 [restartedMain] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [loginRecordCache]
-17:24:49.107 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8099"]
-17:24:49.123 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-17:24:49.123 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
-17:24:49.147 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
-17:24:49.147 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
-17:24:49.147 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-17:24:49.148 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-17:24:50.367 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
-17:24:50.508 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-17:24:51.324 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-17:24:52.743 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-17:24:53.487 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-17:24:53.496 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-17:24:53.497 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.1 created.
-17:24:53.497 [restartedMain] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-17:24:53.498 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
-
-17:24:53.498 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-17:24:53.498 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.1
-17:24:53.498 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1df637c5
-17:24:53.789 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-17:24:53.800 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8099"]
-17:24:53.902 [restartedMain] INFO  com.after90s.GeneralBackendApplication - Started GeneralBackendApplication in 11.788 seconds (JVM running for 14.534)
-17:26:06.258 [http-nio-8099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:26:06.327 [http-nio-8099-exec-1] INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
-17:26:06.357 [http-nio-8099-exec-1] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [shiro-activeSessionCache]
-17:26:43.794 [http-nio-8099-exec-10] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineById - ==>  Preparing: select * from sys_user_online where sessionid = ? 
-17:26:44.409 [http-nio-8099-exec-10] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineById - ==> Parameters: 6o0jolpd5kz717x9nvwbqcr0f(String)
-17:26:44.944 [http-nio-8099-exec-10] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineById - <==      Total: 0
-17:27:23.960 [http-nio-8099-exec-1] DEBUG com.after90s.core.project.user.mapper.UserMapper.selectUserByLoginName - ==>  Preparing: select u.user_id, u.dept_id, u.login_name, u.user_name, u.email, u.phonenumber, u.sex, u.avatar, u.password, u.salt, u.status, u.refuse_des, u.login_ip, u.login_date, u.create_time, d.dept_id, d.parent_id, d.dept_name, d.order_num, d.status as dept_status from sys_user u left join sys_dept d on u.dept_id = d.dept_id left join sys_user_role ur on u.user_id = ur.user_id where u.login_name = ? 
-17:27:23.961 [http-nio-8099-exec-1] DEBUG com.after90s.core.project.user.mapper.UserMapper.selectUserByLoginName - ==> Parameters: admin(String)
-17:27:24.135 [http-nio-8099-exec-1] DEBUG com.after90s.core.project.user.mapper.UserMapper.selectUserByLoginName - <==      Total: 1
-17:27:24.195 [http-nio-8099-exec-1] INFO  sys-user - [10.2.6.26][admin][Success][登录成功]
-17:27:24.197 [http-nio-8099-exec-1] DEBUG com.after90s.core.monitor.accessLog.mapper.AccessLogMapper.insertLogininfor - ==>  Preparing: insert into sys_logininfor (login_name, status, ipaddr, browser, os, msg, login_time) values (?, ?, ?, ?, ?, ?, sysdate()) 
-17:27:24.199 [http-nio-8099-exec-1] DEBUG com.after90s.core.monitor.accessLog.mapper.AccessLogMapper.insertLogininfor - ==> Parameters: admin(String), 0(String), 10.2.6.26(String), Chrome(String), Windows 7(String), 登录成功(String)
-17:27:24.331 [http-nio-8099-exec-1] DEBUG com.after90s.core.monitor.accessLog.mapper.AccessLogMapper.insertLogininfor - <==    Updates: 1
-17:27:24.372 [http-nio-8099-exec-1] DEBUG com.after90s.core.project.user.mapper.UserMapper.updateUser - ==>  Preparing: update sys_user SET dept_id = ?, login_name = ?, user_name = ?, email = ?, phonenumber = ?, sex = ?, password = ?, salt = ?, status = ?, refuse_des = ?, login_ip = ?, login_date = ?, update_time = sysdate() where 1=1 and user_id = ? 
-17:27:24.394 [http-nio-8099-exec-1] DEBUG com.after90s.core.project.user.mapper.UserMapper.updateUser - ==> Parameters: 106(Long), admin(String), 李嘉文(String), 13132032610@163.com(String), 13132032610(String), 1(String), 29c67a30398638269fe600f73a054934(String), 111111(String), 0(Integer), 正常(String), 10.2.6.26(String), 2019-08-13 17:27:24.338(Timestamp), 1(Long)
-17:27:24.543 [http-nio-8099-exec-1] DEBUG com.after90s.core.project.user.mapper.UserMapper.updateUser - <==    Updates: 1
-17:27:24.952 [http-nio-8099-exec-3] DEBUG com.after90s.core.project.menu.mapper.MenuMapper.selectMenusByUserId - ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.url, m.perms , m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.r
+00:26:08.497 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - invalidation sessions...
+00:26:08.790 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+00:26:08.791 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==> Parameters: 2019-08-13 23:56:08(String)
+00:26:08.793 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - <==      Total: 0
+00:26:08.794 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+01:26:08.884 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - invalidation sessions...
+01:26:08.893 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+01:26:08.894 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==> Parameters: 2019-08-14 00:56:08(String)
+01:26:08.897 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - <==      Total: 0
+01:26:08.898 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+02:26:09.257 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - invalidation sessions...
+02:26:09.480 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+02:26:09.505 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==> Parameters: 2019-08-14 01:56:09(String)
+02:26:09.943 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - <==      Total: 0
+02:26:09.945 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+03:26:09.633 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - invalidation sessions...
+03:26:09.812 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+03:26:09.833 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==> Parameters: 2019-08-14 02:56:09(String)
+03:26:10.131 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - <==      Total: 0
+03:26:10.134 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+04:26:10.014 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - invalidation sessions...
+04:26:10.141 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+04:26:10.142 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==> Parameters: 2019-08-14 03:56:10(String)
+04:26:10.145 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - <==      Total: 0
+04:26:10.146 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+05:26:10.401 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - invalidation sessions...
+05:26:10.410 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+05:26:10.411 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==> Parameters: 2019-08-14 04:56:10(String)
+05:26:10.414 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - <==      Total: 0
+05:26:10.414 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+06:26:10.788 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - invalidation sessions...
+06:26:10.798 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+06:26:10.798 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==> Parameters: 2019-08-14 05:56:10(String)
+06:26:10.803 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - <==      Total: 0
+06:26:10.804 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+07:26:11.175 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - invalidation sessions...
+07:26:11.297 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+07:26:11.297 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==> Parameters: 2019-08-14 06:56:11(String)
+07:26:11.302 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - <==      Total: 0
+07:26:11.303 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+08:26:11.562 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - invalidation sessions...
+08:26:11.572 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==>  Preparing: SELECT * FROM sys_user_online o WHERE o.last_access_time <= ? ORDER BY o.last_access_time ASC 
+08:26:11.573 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - ==> Parameters: 2019-08-14 07:56:11(String)
+08:26:11.601 [SessionValidationThread-1] DEBUG com.after90s.core.monitor.online.mapper.OnlineUserMapper.selectOnlineByExpired - <==      Total: 0
+08:26:11.602 [SessionValidationThread-1] INFO  com.after90s.frame.web.session.OnlineWebSessionManager - Finished invalidation session. No sessions were stopped.
+08:39:32.976 [RMI TCP Connection(2)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+08:39:33.010 [RMI TCP Connection(2)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+08:39:33.011 [RMI TCP Connection(2)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+08:39:33.013 [RMI TCP Connection(2)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+08:39:33.116 [RMI TCP Connection(2)-127.0.0.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

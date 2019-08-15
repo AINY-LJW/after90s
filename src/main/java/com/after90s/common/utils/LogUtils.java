@@ -24,8 +24,8 @@ import com.alibaba.fastjson.JSON;
 /**
  * <p>TODO 日志相关工具类</p>
  *
- * <p>Copyright: 版权所有 (c) 2002 - 2008<br>
- * Company: 久其</p>
+ * <p>
+ * </p>
  *
  * @author lijiawen
  * @version 2019年7月20日

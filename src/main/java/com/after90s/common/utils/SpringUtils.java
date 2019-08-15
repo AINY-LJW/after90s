@@ -19,8 +19,8 @@ import org.springframework.stereotype.Component;
 /**
  * <p>TODO spring工具类 方便在非spring管理环境中获取bean</p>
 
- * <p>Copyright: 版权所有 (c) 2002 - 2008<br>
- * Company: 久其</p>
+ * <p>
+ * </p>
  *
  * @author lijiawen
  * @version 2019年7月20日

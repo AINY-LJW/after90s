@@ -17,8 +17,8 @@ import com.after90s.frame.web.domin.BaseEntity;
  * <p>TODO 系统访问日志情况信息</p>
  * sys_logininfor 
  * sys_accesslog
- * <p>Copyright: 版权所有 (c) 2002 - 2008<br>
- * Company: 久其</p>
+ * <p>
+ * </p>
  *
  * @author lijiawen
  * @version 2019年7月20日
